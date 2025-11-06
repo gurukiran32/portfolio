@@ -1,158 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gurukiran Veerapur | Portfolio</title>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/favicon.ico" />
-  <!-- Devicon for skill icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Gurukiran Veerapur</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
 </head>
-
 <body>
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <h2 class="logo">GV</h2>
-
-      <!-- Hamburger -->
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-
+  <header>
+    <nav class="navbar">
+      <div class="logo">Gurukiran Veerapur</div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience & Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience & Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </nav>
-
-  <!-- ===== HEADER ===== -->
-  <header class="hero">
-    <div class="container">
-      <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-img" />
-      <h1>Gurukiran Veerapur</h1>
-      <p>Associate SecOps Engineer at o9 Solutions | Bengaluru, India</p>
-      <div class="social-links">
-        <a href="mailto:gurugk866@gmail.com">📧 Email</a>
-        <a href="https://in.linkedin.com/in/gurukiran-veerapur-7a0051268" target="_blank">🔗 LinkedIn</a>
-        <a href="https://github.com/" target="_blank">💻 GitHub</a>
-      </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- ===== MAIN ===== -->
-  <main>
-
-    <!-- === About === -->
-    <section id="about" class="about-section">
-      <div class="container about-content">
-        <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-photo" />
+  <section class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-photo">
         <div class="about-text">
-          <h2>About Me</h2>
-          <p>I’m an <strong>Associate SecOps Engineer at o9 Solutions</strong> passionate about bridging <strong>software development</strong> and <strong>cybersecurity</strong>. I focus on building systems that are <strong>secure, efficient, and resilient</strong>.</p>
-          <p>I hold a <strong>B.Tech in Computer Science and Engineering</strong> from <strong>PES University</strong>. My expertise spans <strong>Java, Python, and C/C++</strong>, along with web technologies like <strong>HTML, CSS, and JavaScript</strong>.</p>
-          <p>My interests include <strong>AI/ML, NLP, and Computer Vision</strong> — solving real-world problems through intelligent systems. I also explore <strong>security automation, cloud, AI, and DevSecOps</strong>.</p>
+          <h3>Hi, I'm <span class="highlight">Gurukiran Veerapur</span></h3>
+          <p>
+            I’m an <strong>Associate SecOps Engineer at o9 Solutions</strong> based in Bengaluru, India.
+            I’m passionate about bridging the gap between software development and
+            cybersecurity operations, ensuring that applications are secure and resilient.
+          </p>
+          <p>
+            With a <strong>B.Tech in Computer Science and Engineering</strong> from PES University,
+            I have experience in Java, Python, C/C++, and web technologies (HTML, CSS, JS).
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- === Experience & Education === -->
-    <section id="experience" class="experience-section">
-      <div class="container">
-        <h2>Experience & Education</h2>
-
-        <div class="experience-item">
-          <h3>o9 Solutions, Inc.</h3>
-          <p><strong>Associate SecOps Engineer</strong> | Jan 2025 – Present</p>
-          <p><strong>SecOps Intern</strong> | Apr 2024 – Dec 2024</p>
-          <p>Bengaluru, Karnataka, India</p>
-        </div>
-
-        <div class="experience-item">
-          <h3>PES University</h3>
-          <p><strong>B.Tech in Computer Science & Engineering</strong> | 2021 – 2024</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- === Skills === -->
-    <section id="skills" class="skills-section">
-      <h2>Skills</h2>
-      <div class="skills-container">
-
-        <div class="skill-card">
-          <i class="fab fa-python"></i>
-          <p>Python</p>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-java"></i>
-          <p>Java</p>
-        </div>
-
-        <div class="skill-card">
-          <i class="fas fa-code"></i>
-          <p>C/C++</p>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-html5"></i>
-          <p>HTML</p>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-css3-alt"></i>
-          <p>CSS</p>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-js-square"></i>
-          <p>JavaScript</p>
-        </div>
-
-        <div class="skill-card">
-          <i class="fas fa-shield-alt"></i>
-          <p>Security Operations</p>
-        </div>
-
-        <div class="skill-card">
-          <i class="fas fa-brain"></i>
-          <p>Machine Learning</p>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- === Contact === -->
-    <section id="contact" class="contact-section">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p id="formStatus"></p>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2025 Gurukiran Veerapur | Built with ❤️</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer>© 2025 Gurukiran Veerapur | Built with ❤️</footer>
 </body>
 </html>
