@@ -43,3 +43,31 @@ if (contactForm) {
     }, 4000);
   });
 }
+
+const items = document.querySelectorAll('.timeline-item');
+
+function revealTimeline() {
+  items.forEach(item => {
+    const rect = item.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      item.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealTimeline);
+revealTimeline();
+
+const timelineItems = document.querySelectorAll(".timeline-item");
+
+function revealOnScroll() {
+  timelineItems.forEach(item => {
+    const rect = item.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      item.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
