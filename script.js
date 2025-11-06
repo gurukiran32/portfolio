@@ -1,70 +1,45 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('.nav-links a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+// ====== MOBILE MENU TOGGLE ======
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  menuToggle.classList.toggle("open");
+});
+
+// ====== SMOOTH SCROLL (for older browsers) ======
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-// Highlight active section in navbar
-window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('section');
-  let current = '';
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (scrollY >= sectionTop) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === `#${current}`) {
-      link.classList.add('active');
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
+      // Close menu after click (mobile)
+      navLinks.classList.remove("active");
     }
   });
 });
 
-// Mobile drawer menu toggle
-const menu = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
+// ====== CONTACT FORM (FRONT-END ONLY) ======
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
 
-menu.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  navLinks.classList.toggle('active');
-  document.body.classList.toggle('no-scroll'); // Prevent background scroll
-});
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-// Close menu on link click
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('active');
-    navLinks.classList.remove('active');
-    document.body.classList.remove('no-scroll');
+    // Simulate form submission success
+    formStatus.textContent = "✅ Message sent successfully!";
+    formStatus.style.color = "#00adb5";
+
+    // Clear form fields
+    contactForm.reset();
+
+    // Hide message after 4 seconds
+    setTimeout(() => {
+      formStatus.textContent = "";
+    }, 4000);
   });
-});
-
-// === Active Link Highlight on Scroll ===
-const sections = document.querySelectorAll("section");
-const navItems = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navItems.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href").includes(current)) {
-      link.classList.add("active");
-    }
-  });
-});
-
+}

@@ -4,38 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gurukiran Veerapur | Portfolio</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="assets/favicon.ico" />
   <!-- Devicon for skill icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
+
 <body>
-  <!-- Navigation Bar -->
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
-    <div class="container nav-container">
+    <div class="nav-container">
       <h2 class="logo">GV</h2>
 
-      <!-- Hamburger Icon -->
+      <!-- Hamburger -->
       <div class="menu-toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
 
-      <!-- Navigation Links -->
       <ul class="nav-links">
-        <li><a href="#about"><section id="about">About</section></a></li>
-        <li><a href="#experience"><section id="experience">Experience & Education</section></a></li>
-        <li><a href="#skills"><section id="skills"></section></a></li>
-        <li><a href="#contact"><section id="contact">Contact</section></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience & Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-
-
-  <!-- Header -->
-  <header>
+  <!-- ===== HEADER ===== -->
+  <header class="hero">
     <div class="container">
       <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-img" />
       <h1>Gurukiran Veerapur</h1>
@@ -48,93 +50,92 @@
     </div>
   </header>
 
+  <!-- ===== MAIN ===== -->
   <main>
-    <!-- About -->
+
+    <!-- === About === -->
     <section id="about" class="about-section">
+      <div class="container about-content">
+        <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-photo" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I’m an <strong>Associate SecOps Engineer at o9 Solutions</strong> passionate about bridging <strong>software development</strong> and <strong>cybersecurity</strong>. I focus on building systems that are <strong>secure, efficient, and resilient</strong>.</p>
+          <p>I hold a <strong>B.Tech in Computer Science and Engineering</strong> from <strong>PES University</strong>. My expertise spans <strong>Java, Python, and C/C++</strong>, along with web technologies like <strong>HTML, CSS, and JavaScript</strong>.</p>
+          <p>My interests include <strong>AI/ML, NLP, and Computer Vision</strong> — solving real-world problems through intelligent systems. I also explore <strong>security automation, cloud, AI, and DevSecOps</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Experience & Education === -->
+    <section id="experience" class="experience-section">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-photo" />
-          <div class="about-text">
-            <h3>Hi, I'm <span class="highlight">Gurukiran Veerapur</span></h3>
-            <p>
-              I’m an <strong>Associate SecOps Engineer at o9 Solutions</strong>, passionate about
-              bridging <strong>software development</strong> and <strong>cybersecurity</strong>.
-              I focus on building systems that are <strong>secure, efficient, and resilient</strong>.
-            </p>
-            <p>
-              I hold a <strong>B.Tech in Computer Science and Engineering</strong> from
-              <strong>PES University</strong>. My expertise spans <strong>Java, Python, C/C++</strong>,
-              and web technologies like <strong>HTML, CSS, JavaScript</strong>.
-            </p>
-            <p>
-              My interests include <strong>AI/ML, NLP, and Computer Vision</strong> —
-              solving real-world problems through intelligent systems.
-            </p>
-            <p>
-              Outside work, I explore new technologies, learn about <strong>security automation</strong>,
-              and stay curious about <strong>cloud, AI, and DevSecOps</strong>.
-            </p>
-          </div>
+        <h2>Experience & Education</h2>
+
+        <div class="experience-item">
+          <h3>o9 Solutions, Inc.</h3>
+          <p><strong>Associate SecOps Engineer</strong> | Jan 2025 – Present</p>
+          <p><strong>SecOps Intern</strong> | Apr 2024 – Dec 2024</p>
+          <p>Bengaluru, Karnataka, India</p>
+        </div>
+
+        <div class="experience-item">
+          <h3>PES University</h3>
+          <p><strong>B.Tech in Computer Science & Engineering</strong> | 2021 – 2024</p>
         </div>
       </div>
     </section>
 
-    <!-- Experience & Education -->
-    <section id="experience">
-      <h2>Experience & Education</h2>
-      <div class="experience-item">
-        <h3>o9 Solutions, Inc.</h3>
-        <p><strong>Associate SecOps Engineer</strong> | Jan 2025 – Present</p>
-        <p><strong>SecOps Intern</strong> | Apr 2024 – Dec 2024</p>
-        <p>Bengaluru, Karnataka, India</p>
-      </div>
-      <div class="experience-item">
-        <h3>PES University</h3>
-        <p><strong>B.Tech in Computer Science & Engineering</strong> | 2021 – 2024</p>
-      </div>
-    </section>
-
-    <!-- Skills -->
+    <!-- === Skills === -->
     <section id="skills" class="skills-section">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-container">
+      <h2>Skills</h2>
+      <div class="skills-container">
 
-      <div class="skill-category">
-        <h3>Languages</h3>
-        <div class="skill-icons">
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-java-plain colored"></i>
-          <i class="devicon-cplusplus-plain colored"></i>
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
         </div>
-      </div>
 
-      <div class="skill-category">
-        <h3>Frameworks & Libraries</h3>
-        <div class="skill-icons">
-          <i class="devicon-tensorflow-original colored"></i>
-          <i class="devicon-pytorch-original colored"></i>
-          <i class="devicon-react-original colored"></i>
-          <i class="devicon-nodejs-plain colored"></i>
+        <div class="skill-card">
+          <i class="fab fa-java"></i>
+          <p>Java</p>
         </div>
-      </div>
 
-      <div class="skill-category">
-        <h3>Tools & Platforms</h3>
-        <div class="skill-icons">
-          <i class="devicon-git-plain colored"></i>
-          <i class="devicon-docker-plain colored"></i>
-          <i class="devicon-linux-plain colored"></i>
-          <i class="devicon-ansible-plain colored"></i>
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <p>C/C++</p>
         </div>
+
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-js-square"></i>
+          <p>JavaScript</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-shield-alt"></i>
+          <p>Security Operations</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-brain"></i>
+          <p>Machine Learning</p>
+        </div>
+
       </div>
-
-    </div>
-  </section>
+    </section>
 
 
-    <!-- Contact -->
-    <section id="contact">
+    <!-- === Contact === -->
+    <section id="contact" class="contact-section">
       <h2>Contact Me</h2>
       <form id="contactForm">
         <input type="text" id="name" placeholder="Your Name" required />
@@ -144,8 +145,10 @@
       </form>
       <p id="formStatus"></p>
     </section>
+
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>© 2025 Gurukiran Veerapur | Built with ❤️</p>
   </footer>
