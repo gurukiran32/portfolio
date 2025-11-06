@@ -146,73 +146,44 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* ====== TIMELINE ====== */
-.timeline {
-  position: relative;
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 2rem;
-}
-
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  background-color: #00adb5;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -2px;
-  border-radius: 2px;
-}
-
+/* ====== TIMELINE ICON STYLES ====== */
 .timeline-item {
-  padding: 1.5rem 3rem;
-  position: relative;
-  width: 50%;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease-in-out;
+  display: flex;
+  align-items: flex-start;
 }
 
-.timeline-item.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.timeline-item.left {
-  left: 0;
-}
-
-.timeline-item.right {
-  left: 50%;
-}
-
-.timeline-item::after {
-  content: "";
+.timeline-icon {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  right: -10px;
+  top: 20px;
+  left: calc(50% - 17px);
+  width: 34px;
+  height: 34px;
   background-color: #00adb5;
-  border: 3px solid #0f1116;
-  top: 15px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f1116;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.timeline-item.left .timeline-icon {
+  left: calc(50% - 17px);
+}
+
+.timeline-item.right .timeline-icon {
+  left: calc(50% - 17px);
+}
+
+/* Adjust content box to not overlap icons */
+.timeline-content {
+  background: #151820;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
   z-index: 1;
-}
-
-.timeline-item.right::after {
-  left: -10px;
-}
-
-.timeline-item h3 {
-  color: #00adb5;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-item p {
-  font-size: 0.95rem;
-  color: #cccccc;
 }
 
 /* ====== RESPONSIVE TIMELINE ====== */
