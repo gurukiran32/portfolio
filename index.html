@@ -19,21 +19,23 @@
         <a href="https://github.com/" target="_blank">💻 GitHub</a>
       </div>
     </div>
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   </header>
 
   <main>
-    <!-- Summary -->
-    <section id="about">
-      <h2>About Me</h2>
+    <!-- About -->
+    <section id="about" class="about-section" data-aos="fade-up">
       <section id="about" class="about-section">
   <div class="container">
     <h2 class="section-title">About Me</h2>
     <div class="about-content">
-      <img src="assets/photo.jpg" alt="Gurukiran Veerapur" class="profile-photo" />
+      <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-photo" data-aos="zoom-in" data-aos-delay="200" />
       <div class="about-text">
-        <h3>Hi, I'm <span class="highlight">Gurukiran Veerapur</span></h3>
+        <h3>Hi, I'm <span class="highlight" data-aos="fade-down" data-aos-delay="400">Gurukiran Veerapur</span></h3>
         <p>
-          I’m an <strong>Associate SecOps Engineer at o9 Solutions</strong> based in <strong>Bengaluru, India</strong>.
+          I’m an <strong data-aos="fade-up" data-aos-delay="600">Associate SecOps Engineer at o9 Solutions</strong> based in <strong>Bengaluru, India</strong>.
           I’m passionate about bridging the gap between <strong>software development</strong> and
           <strong>cybersecurity operations</strong>, ensuring that applications are not only efficient
           but also secure and resilient.
@@ -62,7 +64,7 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience">
+    <section id="experience" data-aos="fade-right">
       <h2>Experience</h2>
 
       <div class="experience-item">
@@ -74,7 +76,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" data-aos="zoom-in-up">
       <h2>Projects</h2>
       <ul>
         <li><strong>Similar Script Character Recognition</strong> – Developed a VAN-based CNN to recognize Kannada and Telugu characters.</li>
@@ -84,14 +86,14 @@
     </section>
 
     <!-- Education -->
-    <section id="education">
+    <section id="education" data-aos="fade-left">
       <h2>Education</h2>
       <p><strong>PES University</strong></p>
       <p>B.Tech in Computer Science & Engineering (Jan 2021 – May 2024)</p>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h2>Contact Me</h2>
       <form id="contactForm">
         <input type="text" id="name" placeholder="Your Name" required />
@@ -108,5 +110,15 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- AOS Library JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  </script>
+
 </body>
 </html>
