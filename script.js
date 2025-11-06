@@ -1,5 +1,6 @@
-// ====== MOBILE MENU TOGGLE ======
+// ====== DOM READY ======
 document.addEventListener("DOMContentLoaded", () => {
+  // ====== MOBILE MENU TOGGLE ======
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (target) {
         target.scrollIntoView({ behavior: "smooth" });
         if (navLinks) navLinks.classList.remove("active");
+        if (menuToggle) menuToggle.classList.remove("open");
       }
     });
   });
@@ -36,9 +38,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ====== TIMELINE REVEAL ======
+  // ====== TIMELINE: AUTO ALTERNATE SIDES ======
   const timelineItems = document.querySelectorAll(".timeline-item");
 
+  timelineItems.forEach((item, index) => {
+    if (index % 2 === 0) {
+      item.classList.add("left");
+    } else {
+      item.classList.add("right");
+    }
+  });
+
+  // ====== TIMELINE REVEAL ON SCROLL ======
   function revealOnScroll() {
     timelineItems.forEach(item => {
       const rect = item.getBoundingClientRect();
