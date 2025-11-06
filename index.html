@@ -6,94 +6,135 @@
   <title>Gurukiran Veerapur | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="assets/favicon.ico" />
+  <!-- Devicon for skill icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h2 class="logo">GV</h2>
+
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#about"><section id="about">About</section></a></li>
+        <li><a href="#experience"><section id="experience">Experience & Education</section></a></li>
+        <li><a href="#skills"><section id="skills"></section></a></li>
+        <li><a href="#contact"><section id="contact">Contact</section></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!-- Header -->
   <header>
     <div class="container">
       <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-img" />
       <h1>Gurukiran Veerapur</h1>
       <p>Associate SecOps Engineer at o9 Solutions | Bengaluru, India</p>
       <div class="social-links">
-        <a href="mailto:gurugk866@gmail.com" target="_blank">📧 Email</a>
+        <a href="mailto:gurugk866@gmail.com">📧 Email</a>
         <a href="https://in.linkedin.com/in/gurukiran-veerapur-7a0051268" target="_blank">🔗 LinkedIn</a>
         <a href="https://github.com/" target="_blank">💻 GitHub</a>
       </div>
     </div>
-    <!-- AOS Library CSS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   </header>
 
   <main>
     <!-- About -->
-    <section id="about" class="about-section" data-aos="fade-up">
-      <section id="about" class="about-section">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-      <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-photo" data-aos="zoom-in" data-aos-delay="200" />
-      <div class="about-text">
-        <h3>Hi, I'm <span class="highlight" data-aos="fade-down" data-aos-delay="400">Gurukiran Veerapur</span></h3>
-        <p>
-          I’m an <strong data-aos="fade-up" data-aos-delay="600">Associate SecOps Engineer at o9 Solutions</strong> based in <strong>Bengaluru, India</strong>.
-          I’m passionate about bridging the gap between <strong>software development</strong> and
-          <strong>cybersecurity operations</strong>, ensuring that applications are not only efficient
-          but also secure and resilient.
-        </p>
-        <p>
-          With a <strong>B.Tech in Computer Science and Engineering</strong> from <strong>PES University</strong>,
-          I bring a strong foundation across multiple domains — from
-          <strong>application development</strong> using Java Spring Boot, Python, and C/C++,
-          to <strong>web technologies</strong> like HTML, CSS, and JavaScript.
-        </p>
-        <p>
-          I’ve also worked on projects in <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>,
-          and <strong>Computer Vision</strong>, applying intelligent systems to solve real-world challenges.
-          In my current role, I focus on strengthening <strong>security operations</strong>,
-          automating processes, and improving infrastructure reliability.
-        </p>
-        <p>
-          Outside of work, I love exploring new technologies, contributing to open-source projects,
-          and expanding my knowledge in <strong>AI, Security, and Cloud Computing</strong>.
-        </p>
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <img src="assets/profile.jpg" alt="Gurukiran Veerapur" class="profile-photo" />
+          <div class="about-text">
+            <h3>Hi, I'm <span class="highlight">Gurukiran Veerapur</span></h3>
+            <p>
+              I’m an <strong>Associate SecOps Engineer at o9 Solutions</strong>, passionate about
+              bridging <strong>software development</strong> and <strong>cybersecurity</strong>.
+              I focus on building systems that are <strong>secure, efficient, and resilient</strong>.
+            </p>
+            <p>
+              I hold a <strong>B.Tech in Computer Science and Engineering</strong> from
+              <strong>PES University</strong>. My expertise spans <strong>Java, Python, C/C++</strong>,
+              and web technologies like <strong>HTML, CSS, JavaScript</strong>.
+            </p>
+            <p>
+              My interests include <strong>AI/ML, NLP, and Computer Vision</strong> —
+              solving real-world problems through intelligent systems.
+            </p>
+            <p>
+              Outside work, I explore new technologies, learn about <strong>security automation</strong>,
+              and stay curious about <strong>cloud, AI, and DevSecOps</strong>.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
     </section>
 
-    <!-- Experience -->
-    <section id="experience" data-aos="fade-right">
-      <h2>Experience</h2>
-
+    <!-- Experience & Education -->
+    <section id="experience">
+      <h2>Experience & Education</h2>
       <div class="experience-item">
         <h3>o9 Solutions, Inc.</h3>
         <p><strong>Associate SecOps Engineer</strong> | Jan 2025 – Present</p>
         <p><strong>SecOps Intern</strong> | Apr 2024 – Dec 2024</p>
         <p>Bengaluru, Karnataka, India</p>
       </div>
+      <div class="experience-item">
+        <h3>PES University</h3>
+        <p><strong>B.Tech in Computer Science & Engineering</strong> | 2021 – 2024</p>
+      </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" data-aos="zoom-in-up">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Similar Script Character Recognition</strong> – Developed a VAN-based CNN to recognize Kannada and Telugu characters.</li>
-        <li><strong>Heart Disease Detection</strong> – Used CNN for medical data-based prediction.</li>
-        <li><strong>NLP QA Bot</strong> – Built a natural language question-answering bot using Python.</li>
-      </ul>
-    </section>
+    <!-- Skills -->
+    <section id="skills" class="skills-section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
 
-    <!-- Education -->
-    <section id="education" data-aos="fade-left">
-      <h2>Education</h2>
-      <p><strong>PES University</strong></p>
-      <p>B.Tech in Computer Science & Engineering (Jan 2021 – May 2024)</p>
-    </section>
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <div class="skill-icons">
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-java-plain colored"></i>
+          <i class="devicon-cplusplus-plain colored"></i>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Frameworks & Libraries</h3>
+        <div class="skill-icons">
+          <i class="devicon-tensorflow-original colored"></i>
+          <i class="devicon-pytorch-original colored"></i>
+          <i class="devicon-react-original colored"></i>
+          <i class="devicon-nodejs-plain colored"></i>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Tools & Platforms</h3>
+        <div class="skill-icons">
+          <i class="devicon-git-plain colored"></i>
+          <i class="devicon-docker-plain colored"></i>
+          <i class="devicon-linux-plain colored"></i>
+          <i class="devicon-ansible-plain colored"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
     <!-- Contact -->
-    <section id="contact" data-aos="fade-up">
+    <section id="contact">
       <h2>Contact Me</h2>
       <form id="contactForm">
         <input type="text" id="name" placeholder="Your Name" required />
@@ -110,15 +151,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <!-- AOS Library JS -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-in-out'
-    });
-  </script>
-
 </body>
 </html>
